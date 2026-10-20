@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1440px;height:900px;overflow:hidden}
+body{font-family:Barlow,Arial,sans-serif;background:#E9E6DF;color:#141414;font-variant-numeric:tabular-nums}
+.top{height:64px;display:flex;align-items:center;padding:0 40px;gap:32px;border-bottom:2px solid #141414;background:#fff}
+.brand{font-family:"Barlow Condensed";font-weight:800;font-size:26px;text-transform:uppercase;letter-spacing:.02em}
+.brand span{color:#D7261E}
+.tabs{display:flex;gap:0;height:100%}
+.tab{display:flex;align-items:center;padding:0 24px;font-family:"Barlow Condensed";font-weight:700;font-size:19px;text-transform:uppercase;letter-spacing:.06em;color:#7A7770}
+.tab.on{color:#141414;box-shadow:inset 0 -5px 0 #D7261E}
+.wrap{display:grid;grid-template-columns:380px 1fr;gap:32px;padding:32px 40px;height:836px}
+.leaf{background:#fff;border-top:14px solid #D7261E;padding:28px 32px;position:relative;box-shadow:0 1px 0 #141414}
+.leaf::before{content:"";position:absolute;top:-14px;left:0;right:0;height:14px;background:repeating-linear-gradient(90deg,transparent 0 18px,#fff 18px 22px)}
+.leaf .m{font-family:"Barlow Condensed";font-weight:700;font-size:30px;text-transform:uppercase;letter-spacing:.08em;text-align:center}
+.leaf .n{font-family:"Barlow Condensed";font-weight:800;font-size:300px;line-height:.85;text-align:center;letter-spacing:-.04em;margin:8px 0}
+.leaf .w{font-family:"Barlow Condensed";font-weight:700;font-size:34px;text-transform:uppercase;text-align:center;letter-spacing:.04em}
+.leaf .y{text-align:center;font-size:15px;color:#7A7770;margin-top:4px}
+.today{margin-top:28px;border-top:2px solid #141414;padding-top:16px}
+.today h3{font-family:"Barlow Condensed";font-size:22px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+.row{display:flex;gap:14px;font-size:17px;padding:8px 0;border-bottom:1px solid #DDD9D0}
+.row t{font-weight:600;width:48px}
+.row i{font-style:normal;color:#D7261E;font-weight:600}
+.add{margin-top:20px;display:block;text-align:center;background:#141414;color:#fff;font-family:"Barlow Condensed";font-weight:700;font-size:20px;text-transform:uppercase;letter-spacing:.08em;padding:14px}
+.cal{background:#fff;padding:24px 28px;box-shadow:0 1px 0 #141414}
+.ch{display:flex;align-items:baseline;gap:14px;margin-bottom:14px}
+.ch h1{font-family:"Barlow Condensed";font-weight:800;font-size:64px;text-transform:uppercase;line-height:1;letter-spacing:-.01em}
+.ch span{font-family:"Barlow Condensed";font-size:30px;font-weight:600;color:#7A7770}
+.ch .nav{margin-left:auto;display:flex;gap:8px}
+.ch .nav a{border:2px solid #141414;padding:6px 14px;font-weight:600;font-size:15px}
+.g{display:grid;grid-template-columns:repeat(7,1fr)}
+.h{font-family:"Barlow Condensed";font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:.08em;padding:8px 10px;border-bottom:2px solid #141414}
+.h.r{color:#D7261E}
+.d{height:118px;border-bottom:1px solid #DDD9D0;border-right:1px solid #DDD9D0;padding:8px 10px}
+.d:nth-child(7n){border-right:0}
+.d b{font-family:"Barlow Condensed";font-weight:700;font-size:40px;line-height:1;display:block}
+.d.o b{color:#C9C5BB}
+.d.r b{color:#D7261E}
+.d.t{background:#141414;color:#fff}
+.d small{display:block;font-size:13px;margin-top:4px;white-space:nowrap;overflow:hidden}
+.d small::before{content:"■ ";color:#D7261E}
+.d.t small::before{color:#fff}
+</style></head><body>
+<div class="top"><div class="brand">Organi<span>zador</span></div>
+<div class="tabs"><div class="tab on">Calendário</div><div class="tab">Planner</div><div class="tab">Kanban</div></div></div>
+<div class="wrap">
+  <div class="leaf">
+    <div class="m">Outubro</div>
+    <div class="n">20</div>
+    <div class="w">Terça-feira</div>
+    <div class="y">2026 · semana 43</div>
+    <div class="today"><h3>Hoje</h3>
+      <div class="row"><t>07:00</t>Academia <i>↻</i></div>
+      <div class="row"><t>09:00</t>Reunião de equipe</div>
+      <div class="row"><t>14:00</t>Dentista</div>
+    </div>
+    <div class="add">+ Agendar</div>
+  </div>
+  <div class="cal">
+    <div class="ch"><h1>Outubro</h1><span>2026</span><div class="nav"><a>‹</a><a>Hoje</a><a>›</a></div></div>
+    <div class="g">
+      <div class="h">Seg</div><div class="h">Ter</div><div class="h">Qua</div><div class="h">Qui</div><div class="h">Sex</div><div class="h">Sáb</div><div class="h r">Dom</div>
+      <div class="d o"><b>28</b></div><div class="d o"><b>29</b></div><div class="d o"><b>30</b></div><div class="d"><b>1</b></div><div class="d"><b>2</b><small>Entrega relatório</small></div><div class="d"><b>3</b></div><div class="d r"><b>4</b></div>
+      <div class="d"><b>5</b></div><div class="d"><b>6</b></div><div class="d"><b>7</b><small>Exame de sangue</small></div><div class="d"><b>8</b></div><div class="d"><b>9</b></div><div class="d"><b>10</b><small>Churrasco</small></div><div class="d r"><b>11</b></div>
+      <div class="d r"><b>12</b><small>N. S. Aparecida</small></div><div class="d"><b>13</b></div><div class="d"><b>14</b></div><div class="d"><b>15</b><small>Pagar aluguel</small></div><div class="d"><b>16</b></div><div class="d"><b>17</b></div><div class="d r"><b>18</b></div>
+      <div class="d"><b>19</b></div><div class="d t"><b>20</b><small>09:00 Reunião</small><small>14:00 Dentista</small></div><div class="d"><b>21</b></div><div class="d"><b>22</b><small>19:30 Aniver. Ana</small></div><div class="d"><b>23</b></div><div class="d"><b>24</b><small>10:00 Feira</small></div><div class="d r"><b>25</b></div>
+      <div class="d"><b>26</b></div><div class="d"><b>27</b></div><div class="d"><b>28</b><small>18:00 Inglês</small></div><div class="d"><b>29</b></div><div class="d"><b>30</b></div><div class="d"><b>31</b></div><div class="d o r"><b>1</b></div>
+    </div>
+  </div>
+</div>
+</body></html>

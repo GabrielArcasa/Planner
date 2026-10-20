@@ -1,0 +1,116 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/assigned.html"
+        ],
+        "createdAt": "2026-10-20T16:36:24.102Z",
+        "reason": "Claude: decision-round sketch (direction card thumbnail), not shipped; alternative worlds use their own fonts by design"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/assigned.html"
+        ],
+        "createdAt": "2026-10-20T16:36:24.199Z",
+        "reason": "Claude: decision-round sketch (direction card thumbnail), not shipped; alternative worlds use their own fonts by design"
+      },
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/assigned.html"
+        ],
+        "createdAt": "2026-10-20T16:36:24.293Z",
+        "reason": "Claude: decision-round sketch (direction card thumbnail), not shipped; alternative worlds use their own fonts by design"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/model-pick.html"
+        ],
+        "createdAt": "2026-10-20T16:36:24.385Z",
+        "reason": "Claude: decision-round sketch (direction card thumbnail), not shipped; alternative worlds use their own fonts by design"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/model-pick.html"
+        ],
+        "createdAt": "2026-10-20T16:36:24.476Z",
+        "reason": "Claude: decision-round sketch (direction card thumbnail), not shipped; alternative worlds use their own fonts by design"
+      },
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/model-pick.html"
+        ],
+        "createdAt": "2026-10-20T16:36:24.574Z",
+        "reason": "Claude: decision-round sketch (direction card thumbnail), not shipped; alternative worlds use their own fonts by design"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/challenger-yellow.html"
+        ],
+        "createdAt": "2026-10-20T16:36:24.666Z",
+        "reason": "Claude: decision-round sketch (direction card thumbnail), not shipped; alternative worlds use their own fonts by design"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/challenger-yellow.html"
+        ],
+        "createdAt": "2026-10-20T16:36:24.755Z",
+        "reason": "Claude: decision-round sketch (direction card thumbnail), not shipped; alternative worlds use their own fonts by design"
+      },
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/challenger-yellow.html"
+        ],
+        "createdAt": "2026-10-20T16:36:24.844Z",
+        "reason": "Claude: decision-round sketch (direction card thumbnail), not shipped; alternative worlds use their own fonts by design"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/canon.html"
+        ],
+        "createdAt": "2026-10-20T16:36:24.936Z",
+        "reason": "Claude: decision-round sketch (direction card thumbnail), not shipped; alternative worlds use their own fonts by design"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/canon.html"
+        ],
+        "createdAt": "2026-10-20T16:36:25.030Z",
+        "reason": "Claude: decision-round sketch (direction card thumbnail), not shipped; alternative worlds use their own fonts by design"
+      },
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/canon.html"
+        ],
+        "createdAt": "2026-10-20T16:36:25.128Z",
+        "reason": "Claude: decision-round sketch (direction card thumbnail), not shipped; alternative worlds use their own fonts by design"
+      }
+    ]
+  }
+}

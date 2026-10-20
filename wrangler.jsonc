@@ -1,0 +1,9 @@
+// Cloudflare Workers: publica a pasta site/ como site estático.
+// O "name" precisa ser igual ao nome do Worker no painel (planner).
+{
+  "name": "planner",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./site"
+  }
+}

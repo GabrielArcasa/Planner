@@ -1,0 +1,966 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-20T00:00:00Z",
+  "title": "Design System: Organizador",
+  "extensions": {
+    "colorMeta": {
+      "accent": {
+        "role": "primary",
+        "displayName": "Signal Yellow",
+        "canonical": "#FFD100",
+        "oklch": "oklch(87.5% 0.179 92.7)",
+        "tonalRamp": [
+          "oklch(15.0% 0.118 92.7)",
+          "oklch(26.0% 0.142 92.7)",
+          "oklch(38.0% 0.168 92.7)",
+          "oklch(50.0% 0.179 92.7)",
+          "oklch(62.0% 0.179 92.7)",
+          "oklch(74.0% 0.179 92.7)",
+          "oklch(85.0% 0.161 92.7)",
+          "oklch(95.0% 0.140 92.7)"
+        ]
+      },
+      "band": {
+        "role": "primary",
+        "displayName": "Platform Band",
+        "canonical": "#FFF1A8",
+        "oklch": "oklch(95.3% 0.093 98.6)",
+        "tonalRamp": [
+          "oklch(15.0% 0.061 98.6)",
+          "oklch(26.0% 0.074 98.6)",
+          "oklch(38.0% 0.087 98.6)",
+          "oklch(50.0% 0.093 98.6)",
+          "oklch(62.0% 0.093 98.6)",
+          "oklch(74.0% 0.093 98.6)",
+          "oklch(85.0% 0.084 98.6)",
+          "oklch(95.0% 0.072 98.6)"
+        ]
+      },
+      "tint": {
+        "role": "primary",
+        "displayName": "Week Tint",
+        "canonical": "#FFFAE0",
+        "oklch": "oklch(98.2% 0.034 98.1)",
+        "tonalRamp": [
+          "oklch(15.0% 0.023 98.1)",
+          "oklch(26.0% 0.027 98.1)",
+          "oklch(38.0% 0.032 98.1)",
+          "oklch(50.0% 0.034 98.1)",
+          "oklch(62.0% 0.034 98.1)",
+          "oklch(74.0% 0.034 98.1)",
+          "oklch(85.0% 0.031 98.1)",
+          "oklch(95.0% 0.027 98.1)"
+        ]
+      },
+      "line-1-azul": {
+        "role": "secondary",
+        "displayName": "Linha 1 Azul",
+        "canonical": "#0455A1",
+        "oklch": "oklch(45.2% 0.141 253.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.093 253.9)",
+          "oklch(26.0% 0.112 253.9)",
+          "oklch(38.0% 0.132 253.9)",
+          "oklch(50.0% 0.141 253.9)",
+          "oklch(62.0% 0.141 253.9)",
+          "oklch(74.0% 0.141 253.9)",
+          "oklch(85.0% 0.127 253.9)",
+          "oklch(95.0% 0.110 253.9)"
+        ]
+      },
+      "line-2-verde": {
+        "role": "secondary",
+        "displayName": "Linha 2 Verde",
+        "canonical": "#007E5E",
+        "oklch": "oklch(52.6% 0.107 167.4)",
+        "tonalRamp": [
+          "oklch(15.0% 0.071 167.4)",
+          "oklch(26.0% 0.085 167.4)",
+          "oklch(38.0% 0.100 167.4)",
+          "oklch(50.0% 0.107 167.4)",
+          "oklch(62.0% 0.107 167.4)",
+          "oklch(74.0% 0.107 167.4)",
+          "oklch(85.0% 0.097 167.4)",
+          "oklch(95.0% 0.084 167.4)"
+        ]
+      },
+      "line-3-vermelha": {
+        "role": "secondary",
+        "displayName": "Linha 3 Vermelha",
+        "canonical": "#D9261C",
+        "oklch": "oklch(57.1% 0.213 29.1)",
+        "tonalRamp": [
+          "oklch(15.0% 0.141 29.1)",
+          "oklch(26.0% 0.169 29.1)",
+          "oklch(38.0% 0.200 29.1)",
+          "oklch(50.0% 0.213 29.1)",
+          "oklch(62.0% 0.213 29.1)",
+          "oklch(74.0% 0.213 29.1)",
+          "oklch(85.0% 0.192 29.1)",
+          "oklch(95.0% 0.167 29.1)"
+        ]
+      },
+      "line-4-amarela": {
+        "role": "secondary",
+        "displayName": "Linha 4 Amarela",
+        "canonical": "#FFD100",
+        "oklch": "oklch(87.5% 0.179 92.7)",
+        "tonalRamp": [
+          "oklch(15.0% 0.118 92.7)",
+          "oklch(26.0% 0.142 92.7)",
+          "oklch(38.0% 0.168 92.7)",
+          "oklch(50.0% 0.179 92.7)",
+          "oklch(62.0% 0.179 92.7)",
+          "oklch(74.0% 0.179 92.7)",
+          "oklch(85.0% 0.161 92.7)",
+          "oklch(95.0% 0.140 92.7)"
+        ]
+      },
+      "line-5-lilas": {
+        "role": "secondary",
+        "displayName": "Linha 5 Lilás",
+        "canonical": "#9B3894",
+        "oklch": "oklch(51.5% 0.171 330.6)",
+        "tonalRamp": [
+          "oklch(15.0% 0.113 330.6)",
+          "oklch(26.0% 0.136 330.6)",
+          "oklch(38.0% 0.160 330.6)",
+          "oklch(50.0% 0.171 330.6)",
+          "oklch(62.0% 0.171 330.6)",
+          "oklch(74.0% 0.171 330.6)",
+          "oklch(85.0% 0.154 330.6)",
+          "oklch(95.0% 0.134 330.6)"
+        ]
+      },
+      "line-15-prata": {
+        "role": "secondary",
+        "displayName": "Linha 15 Prata",
+        "canonical": "#9EA3A8",
+        "oklch": "oklch(71.3% 0.009 248.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.006 248.0)",
+          "oklch(26.0% 0.007 248.0)",
+          "oklch(38.0% 0.009 248.0)",
+          "oklch(50.0% 0.009 248.0)",
+          "oklch(62.0% 0.009 248.0)",
+          "oklch(74.0% 0.009 248.0)",
+          "oklch(85.0% 0.008 248.0)",
+          "oklch(95.0% 0.007 248.0)"
+        ]
+      },
+      "red": {
+        "role": "tertiary",
+        "displayName": "Holiday Red",
+        "canonical": "#C8231A",
+        "oklch": "oklch(53.8% 0.200 29.1)",
+        "tonalRamp": [
+          "oklch(15.0% 0.132 29.1)",
+          "oklch(26.0% 0.159 29.1)",
+          "oklch(38.0% 0.187 29.1)",
+          "oklch(50.0% 0.200 29.1)",
+          "oklch(62.0% 0.200 29.1)",
+          "oklch(74.0% 0.200 29.1)",
+          "oklch(85.0% 0.180 29.1)",
+          "oklch(95.0% 0.156 29.1)"
+        ]
+      },
+      "ok": {
+        "role": "tertiary",
+        "displayName": "Stamp Green",
+        "canonical": "#007E5E",
+        "oklch": "oklch(52.6% 0.107 167.4)",
+        "tonalRamp": [
+          "oklch(15.0% 0.071 167.4)",
+          "oklch(26.0% 0.085 167.4)",
+          "oklch(38.0% 0.100 167.4)",
+          "oklch(50.0% 0.107 167.4)",
+          "oklch(62.0% 0.107 167.4)",
+          "oklch(74.0% 0.107 167.4)",
+          "oklch(85.0% 0.097 167.4)",
+          "oklch(95.0% 0.084 167.4)"
+        ]
+      },
+      "ok-ink": {
+        "role": "tertiary",
+        "displayName": "Stamp Ink",
+        "canonical": "#FFFFFF",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 89.9)",
+          "oklch(26.0% 0.000 89.9)",
+          "oklch(38.0% 0.000 89.9)",
+          "oklch(50.0% 0.000 89.9)",
+          "oklch(62.0% 0.000 89.9)",
+          "oklch(74.0% 0.000 89.9)",
+          "oklch(85.0% 0.000 89.9)",
+          "oklch(95.0% 0.000 89.9)"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Station Concrete",
+        "canonical": "#F3F4F1",
+        "oklch": "oklch(96.6% 0.004 121.6)",
+        "tonalRamp": [
+          "oklch(15.0% 0.003 121.6)",
+          "oklch(26.0% 0.003 121.6)",
+          "oklch(38.0% 0.004 121.6)",
+          "oklch(50.0% 0.004 121.6)",
+          "oklch(62.0% 0.004 121.6)",
+          "oklch(74.0% 0.004 121.6)",
+          "oklch(85.0% 0.004 121.6)",
+          "oklch(95.0% 0.003 121.6)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Platform White",
+        "canonical": "#FFFFFF",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 89.9)",
+          "oklch(26.0% 0.000 89.9)",
+          "oklch(38.0% 0.000 89.9)",
+          "oklch(50.0% 0.000 89.9)",
+          "oklch(62.0% 0.000 89.9)",
+          "oklch(74.0% 0.000 89.9)",
+          "oklch(85.0% 0.000 89.9)",
+          "oklch(95.0% 0.000 89.9)"
+        ]
+      },
+      "surface-2": {
+        "role": "neutral",
+        "displayName": "Off-Platform",
+        "canonical": "#F7F8F5",
+        "oklch": "oklch(97.8% 0.004 121.6)",
+        "tonalRamp": [
+          "oklch(15.0% 0.003 121.6)",
+          "oklch(26.0% 0.003 121.6)",
+          "oklch(38.0% 0.004 121.6)",
+          "oklch(50.0% 0.004 121.6)",
+          "oklch(62.0% 0.004 121.6)",
+          "oklch(74.0% 0.004 121.6)",
+          "oklch(85.0% 0.004 121.6)",
+          "oklch(95.0% 0.003 121.6)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Sign Ink",
+        "canonical": "#16181A",
+        "oklch": "oklch(20.8% 0.005 248.1)",
+        "tonalRamp": [
+          "oklch(15.0% 0.003 248.1)",
+          "oklch(26.0% 0.004 248.1)",
+          "oklch(38.0% 0.005 248.1)",
+          "oklch(50.0% 0.005 248.1)",
+          "oklch(62.0% 0.005 248.1)",
+          "oklch(74.0% 0.005 248.1)",
+          "oklch(85.0% 0.005 248.1)",
+          "oklch(95.0% 0.004 248.1)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Secondary Ink",
+        "canonical": "#464A45",
+        "oklch": "oklch(40.4% 0.010 139.4)",
+        "tonalRamp": [
+          "oklch(15.0% 0.006 139.4)",
+          "oklch(26.0% 0.008 139.4)",
+          "oklch(38.0% 0.009 139.4)",
+          "oklch(50.0% 0.010 139.4)",
+          "oklch(62.0% 0.010 139.4)",
+          "oklch(74.0% 0.010 139.4)",
+          "oklch(85.0% 0.009 139.4)",
+          "oklch(95.0% 0.008 139.4)"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Tertiary Ink",
+        "canonical": "#62665F",
+        "oklch": "oklch(50.5% 0.012 131.5)",
+        "tonalRamp": [
+          "oklch(15.0% 0.008 131.5)",
+          "oklch(26.0% 0.009 131.5)",
+          "oklch(38.0% 0.011 131.5)",
+          "oklch(50.0% 0.012 131.5)",
+          "oklch(62.0% 0.012 131.5)",
+          "oklch(74.0% 0.012 131.5)",
+          "oklch(85.0% 0.011 131.5)",
+          "oklch(95.0% 0.009 131.5)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#CDD0CA",
+        "oklch": "oklch(85.4% 0.009 128.6)",
+        "tonalRamp": [
+          "oklch(15.0% 0.006 128.6)",
+          "oklch(26.0% 0.007 128.6)",
+          "oklch(38.0% 0.008 128.6)",
+          "oklch(50.0% 0.009 128.6)",
+          "oklch(62.0% 0.009 128.6)",
+          "oklch(74.0% 0.009 128.6)",
+          "oklch(85.0% 0.008 128.6)",
+          "oklch(95.0% 0.007 128.6)"
+        ]
+      },
+      "rule-strong": {
+        "role": "neutral",
+        "displayName": "Strong Rule",
+        "canonical": "#16181A",
+        "oklch": "oklch(20.8% 0.005 248.1)",
+        "tonalRamp": [
+          "oklch(15.0% 0.003 248.1)",
+          "oklch(26.0% 0.004 248.1)",
+          "oklch(38.0% 0.005 248.1)",
+          "oklch(50.0% 0.005 248.1)",
+          "oklch(62.0% 0.005 248.1)",
+          "oklch(74.0% 0.005 248.1)",
+          "oklch(85.0% 0.005 248.1)",
+          "oklch(95.0% 0.004 248.1)"
+        ]
+      },
+      "sign": {
+        "role": "neutral",
+        "displayName": "Sign Bar",
+        "canonical": "#16181A",
+        "oklch": "oklch(20.8% 0.005 248.1)",
+        "tonalRamp": [
+          "oklch(15.0% 0.003 248.1)",
+          "oklch(26.0% 0.004 248.1)",
+          "oklch(38.0% 0.005 248.1)",
+          "oklch(50.0% 0.005 248.1)",
+          "oklch(62.0% 0.005 248.1)",
+          "oklch(74.0% 0.005 248.1)",
+          "oklch(85.0% 0.005 248.1)",
+          "oklch(95.0% 0.004 248.1)"
+        ]
+      },
+      "sign-ink": {
+        "role": "neutral",
+        "displayName": "Sign White",
+        "canonical": "#FFFFFF",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 89.9)",
+          "oklch(26.0% 0.000 89.9)",
+          "oklch(38.0% 0.000 89.9)",
+          "oklch(50.0% 0.000 89.9)",
+          "oklch(62.0% 0.000 89.9)",
+          "oklch(74.0% 0.000 89.9)",
+          "oklch(85.0% 0.000 89.9)",
+          "oklch(95.0% 0.000 89.9)"
+        ]
+      },
+      "sign-ink-2": {
+        "role": "neutral",
+        "displayName": "Sign Grey",
+        "canonical": "#B9BCB8",
+        "oklch": "oklch(79.2% 0.006 137.8)",
+        "tonalRamp": [
+          "oklch(15.0% 0.004 137.8)",
+          "oklch(26.0% 0.005 137.8)",
+          "oklch(38.0% 0.006 137.8)",
+          "oklch(50.0% 0.006 137.8)",
+          "oklch(62.0% 0.006 137.8)",
+          "oklch(74.0% 0.006 137.8)",
+          "oklch(85.0% 0.006 137.8)",
+          "oklch(95.0% 0.005 137.8)"
+        ]
+      },
+      "band-ink-2": {
+        "role": "neutral",
+        "displayName": "Band Olive",
+        "canonical": "#4A4000",
+        "oklch": "oklch(37.0% 0.077 99.2)",
+        "tonalRamp": [
+          "oklch(15.0% 0.051 99.2)",
+          "oklch(26.0% 0.061 99.2)",
+          "oklch(38.0% 0.072 99.2)",
+          "oklch(50.0% 0.077 99.2)",
+          "oklch(62.0% 0.077 99.2)",
+          "oklch(74.0% 0.077 99.2)",
+          "oklch(85.0% 0.069 99.2)",
+          "oklch(95.0% 0.060 99.2)"
+        ]
+      },
+      "band-ink-3": {
+        "role": "neutral",
+        "displayName": "Band Olive Light",
+        "canonical": "#5E5200",
+        "oklch": "oklch(43.7% 0.091 99.5)",
+        "tonalRamp": [
+          "oklch(15.0% 0.060 99.5)",
+          "oklch(26.0% 0.072 99.5)",
+          "oklch(38.0% 0.085 99.5)",
+          "oklch(50.0% 0.091 99.5)",
+          "oklch(62.0% 0.091 99.5)",
+          "oklch(74.0% 0.091 99.5)",
+          "oklch(85.0% 0.082 99.5)",
+          "oklch(95.0% 0.071 99.5)"
+        ]
+      },
+      "ground-dark": {
+        "role": "neutral",
+        "displayName": "Night Concrete",
+        "canonical": "#101113",
+        "oklch": "oklch(17.7% 0.004 264.5)",
+        "tonalRamp": [
+          "oklch(15.0% 0.003 264.5)",
+          "oklch(26.0% 0.003 264.5)",
+          "oklch(38.0% 0.004 264.5)",
+          "oklch(50.0% 0.004 264.5)",
+          "oklch(62.0% 0.004 264.5)",
+          "oklch(74.0% 0.004 264.5)",
+          "oklch(85.0% 0.004 264.5)",
+          "oklch(95.0% 0.003 264.5)"
+        ]
+      },
+      "surface-dark": {
+        "role": "neutral",
+        "displayName": "Night Platform",
+        "canonical": "#1A1C1F",
+        "oklch": "oklch(22.6% 0.007 258.4)",
+        "tonalRamp": [
+          "oklch(15.0% 0.004 258.4)",
+          "oklch(26.0% 0.005 258.4)",
+          "oklch(38.0% 0.006 258.4)",
+          "oklch(50.0% 0.007 258.4)",
+          "oklch(62.0% 0.007 258.4)",
+          "oklch(74.0% 0.007 258.4)",
+          "oklch(85.0% 0.006 258.4)",
+          "oklch(95.0% 0.005 258.4)"
+        ]
+      },
+      "surface-2-dark": {
+        "role": "neutral",
+        "displayName": "Night Off-Platform",
+        "canonical": "#151719",
+        "oklch": "oklch(20.3% 0.005 248.1)",
+        "tonalRamp": [
+          "oklch(15.0% 0.003 248.1)",
+          "oklch(26.0% 0.004 248.1)",
+          "oklch(38.0% 0.005 248.1)",
+          "oklch(50.0% 0.005 248.1)",
+          "oklch(62.0% 0.005 248.1)",
+          "oklch(74.0% 0.005 248.1)",
+          "oklch(85.0% 0.005 248.1)",
+          "oklch(95.0% 0.004 248.1)"
+        ]
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Night Ink",
+        "canonical": "#F1F2EF",
+        "oklch": "oklch(96.0% 0.004 121.6)",
+        "tonalRamp": [
+          "oklch(15.0% 0.003 121.6)",
+          "oklch(26.0% 0.003 121.6)",
+          "oklch(38.0% 0.004 121.6)",
+          "oklch(50.0% 0.004 121.6)",
+          "oklch(62.0% 0.004 121.6)",
+          "oklch(74.0% 0.004 121.6)",
+          "oklch(85.0% 0.004 121.6)",
+          "oklch(95.0% 0.003 121.6)"
+        ]
+      },
+      "ink-2-dark": {
+        "role": "neutral",
+        "displayName": "Night Secondary Ink",
+        "canonical": "#CACDC7",
+        "oklch": "oklch(84.4% 0.009 128.6)",
+        "tonalRamp": [
+          "oklch(15.0% 0.006 128.6)",
+          "oklch(26.0% 0.007 128.6)",
+          "oklch(38.0% 0.008 128.6)",
+          "oklch(50.0% 0.009 128.6)",
+          "oklch(62.0% 0.009 128.6)",
+          "oklch(74.0% 0.009 128.6)",
+          "oklch(85.0% 0.008 128.6)",
+          "oklch(95.0% 0.007 128.6)"
+        ]
+      },
+      "ink-3-dark": {
+        "role": "neutral",
+        "displayName": "Night Tertiary Ink",
+        "canonical": "#A2A69F",
+        "oklch": "oklch(72.0% 0.011 131.4)",
+        "tonalRamp": [
+          "oklch(15.0% 0.007 131.4)",
+          "oklch(26.0% 0.009 131.4)",
+          "oklch(38.0% 0.010 131.4)",
+          "oklch(50.0% 0.011 131.4)",
+          "oklch(62.0% 0.011 131.4)",
+          "oklch(74.0% 0.011 131.4)",
+          "oklch(85.0% 0.010 131.4)",
+          "oklch(95.0% 0.009 131.4)"
+        ]
+      },
+      "rule-dark": {
+        "role": "neutral",
+        "displayName": "Night Hairline",
+        "canonical": "#34373B",
+        "oklch": "oklch(33.5% 0.008 255.6)",
+        "tonalRamp": [
+          "oklch(15.0% 0.005 255.6)",
+          "oklch(26.0% 0.006 255.6)",
+          "oklch(38.0% 0.008 255.6)",
+          "oklch(50.0% 0.008 255.6)",
+          "oklch(62.0% 0.008 255.6)",
+          "oklch(74.0% 0.008 255.6)",
+          "oklch(85.0% 0.007 255.6)",
+          "oklch(95.0% 0.006 255.6)"
+        ]
+      },
+      "rule-strong-dark": {
+        "role": "neutral",
+        "displayName": "Night Strong Rule",
+        "canonical": "#E6E7E3",
+        "oklch": "oklch(92.6% 0.005 117.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.004 117.9)",
+          "oklch(26.0% 0.004 117.9)",
+          "oklch(38.0% 0.005 117.9)",
+          "oklch(50.0% 0.005 117.9)",
+          "oklch(62.0% 0.005 117.9)",
+          "oklch(74.0% 0.005 117.9)",
+          "oklch(85.0% 0.005 117.9)",
+          "oklch(95.0% 0.004 117.9)"
+        ]
+      },
+      "sign-dark": {
+        "role": "neutral",
+        "displayName": "Night Sign Bar",
+        "canonical": "#000000",
+        "oklch": "oklch(0.0% 0.000 0.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 0.0)",
+          "oklch(26.0% 0.000 0.0)",
+          "oklch(38.0% 0.000 0.0)",
+          "oklch(50.0% 0.000 0.0)",
+          "oklch(62.0% 0.000 0.0)",
+          "oklch(74.0% 0.000 0.0)",
+          "oklch(85.0% 0.000 0.0)",
+          "oklch(95.0% 0.000 0.0)"
+        ]
+      },
+      "band-dark": {
+        "role": "primary",
+        "displayName": "Night Band",
+        "canonical": "#26251E",
+        "oklch": "oklch(26.3% 0.013 100.5)",
+        "tonalRamp": [
+          "oklch(15.0% 0.008 100.5)",
+          "oklch(26.0% 0.010 100.5)",
+          "oklch(38.0% 0.012 100.5)",
+          "oklch(50.0% 0.013 100.5)",
+          "oklch(62.0% 0.013 100.5)",
+          "oklch(74.0% 0.013 100.5)",
+          "oklch(85.0% 0.011 100.5)",
+          "oklch(95.0% 0.010 100.5)"
+        ]
+      },
+      "tint-dark": {
+        "role": "primary",
+        "displayName": "Night Week Tint",
+        "canonical": "#1C1C19",
+        "oklch": "oklch(22.5% 0.006 106.8)",
+        "tonalRamp": [
+          "oklch(15.0% 0.004 106.8)",
+          "oklch(26.0% 0.004 106.8)",
+          "oklch(38.0% 0.005 106.8)",
+          "oklch(50.0% 0.006 106.8)",
+          "oklch(62.0% 0.006 106.8)",
+          "oklch(74.0% 0.006 106.8)",
+          "oklch(85.0% 0.005 106.8)",
+          "oklch(95.0% 0.004 106.8)"
+        ]
+      },
+      "red-dark": {
+        "role": "tertiary",
+        "displayName": "Night Holiday Red",
+        "canonical": "#FF7A6E",
+        "oklch": "oklch(73.2% 0.164 27.1)",
+        "tonalRamp": [
+          "oklch(15.0% 0.109 27.1)",
+          "oklch(26.0% 0.130 27.1)",
+          "oklch(38.0% 0.154 27.1)",
+          "oklch(50.0% 0.164 27.1)",
+          "oklch(62.0% 0.164 27.1)",
+          "oklch(74.0% 0.164 27.1)",
+          "oklch(85.0% 0.148 27.1)",
+          "oklch(95.0% 0.128 27.1)"
+        ]
+      },
+      "ok-dark": {
+        "role": "tertiary",
+        "displayName": "Night Stamp Green",
+        "canonical": "#4CD3A5",
+        "oklch": "oklch(78.1% 0.135 166.7)",
+        "tonalRamp": [
+          "oklch(15.0% 0.089 166.7)",
+          "oklch(26.0% 0.107 166.7)",
+          "oklch(38.0% 0.127 166.7)",
+          "oklch(50.0% 0.135 166.7)",
+          "oklch(62.0% 0.135 166.7)",
+          "oklch(74.0% 0.135 166.7)",
+          "oklch(85.0% 0.122 166.7)",
+          "oklch(95.0% 0.105 166.7)"
+        ]
+      },
+      "ok-ink-dark": {
+        "role": "tertiary",
+        "displayName": "Night Stamp Ink",
+        "canonical": "#06231A",
+        "oklch": "oklch(23.1% 0.039 169.1)",
+        "tonalRamp": [
+          "oklch(15.0% 0.026 169.1)",
+          "oklch(26.0% 0.031 169.1)",
+          "oklch(38.0% 0.037 169.1)",
+          "oklch(50.0% 0.039 169.1)",
+          "oklch(62.0% 0.039 169.1)",
+          "oklch(74.0% 0.039 169.1)",
+          "oklch(85.0% 0.035 169.1)",
+          "oklch(95.0% 0.030 169.1)"
+        ]
+      },
+      "band-ink-2-dark": {
+        "role": "neutral",
+        "displayName": "Night Band Cream",
+        "canonical": "#E6DFB8",
+        "oklch": "oklch(89.9% 0.052 98.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.034 98.9)",
+          "oklch(26.0% 0.041 98.9)",
+          "oklch(38.0% 0.049 98.9)",
+          "oklch(50.0% 0.052 98.9)",
+          "oklch(62.0% 0.052 98.9)",
+          "oklch(74.0% 0.052 98.9)",
+          "oklch(85.0% 0.047 98.9)",
+          "oklch(95.0% 0.040 98.9)"
+        ]
+      },
+      "band-ink-3-dark": {
+        "role": "neutral",
+        "displayName": "Night Band Cream Light",
+        "canonical": "#CFC69A",
+        "oklch": "oklch(82.3% 0.059 97.8)",
+        "tonalRamp": [
+          "oklch(15.0% 0.039 97.8)",
+          "oklch(26.0% 0.047 97.8)",
+          "oklch(38.0% 0.056 97.8)",
+          "oklch(50.0% 0.059 97.8)",
+          "oklch(62.0% 0.059 97.8)",
+          "oklch(74.0% 0.059 97.8)",
+          "oklch(85.0% 0.054 97.8)",
+          "oklch(95.0% 0.046 97.8)"
+        ]
+      },
+      "hover": {
+        "role": "neutral",
+        "displayName": "Ink Wash",
+        "canonical": "rgba(22, 24, 26, 0.05)"
+      },
+      "hover-dark": {
+        "role": "neutral",
+        "displayName": "Night Ink Wash",
+        "canonical": "rgba(241, 242, 239, 0.06)"
+      },
+      "week-rule-dark": {
+        "role": "primary",
+        "displayName": "Night Week Rule",
+        "canonical": "rgba(255, 209, 0, 0.55)"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "View title (month, Semana, Kanban) with an inline 500-weight qualifier at 0.48em."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Panel heads: Linha da semana, Rotina semanal; 22px below 1180px."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Station names; 20px in the desktop planner row and for kanban stages."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default text."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "Subheads, notes and item titles; capped at 60ch."
+      },
+      "action": {
+        "displayName": "Action",
+        "purpose": "Buttons; tabs at 16px."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase weekday column heads and the Hoje state label."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Tabular time column."
+      },
+      "disc-numeral": {
+        "displayName": "Disc Numeral",
+        "purpose": "Line numbers inside category discs."
+      }
+    },
+    "fontLoading": {
+      "family": "Archivo",
+      "weights": [
+        400,
+        500,
+        600,
+        700,
+        800
+      ],
+      "source": "self-hosted variable woff2 (wght 400 800) in site/fonts/: archivo-latin.woff2, archivo-latin-ext.woff2; @font-face in site/css/styles.css with unicode-range, font-display: swap; license site/fonts/OFL.txt",
+      "status": "self-hosted; no external requests"
+    },
+    "shadows": [
+      {
+        "name": "lift",
+        "value": "0 14px 28px -8px rgba(22, 24, 26, 0.32), 0 2px 6px rgba(22, 24, 26, 0.14)",
+        "purpose": "Drag ghost and toast only."
+      },
+      {
+        "name": "lift-dark",
+        "value": "0 14px 28px -8px rgba(0, 0, 0, 0.7), 0 2px 6px rgba(0, 0, 0, 0.5)",
+        "purpose": "Lift in the dark scheme."
+      },
+      {
+        "name": "disc-edge",
+        "value": "inset 0 0 0 1px rgba(0, 0, 0, 0.14)",
+        "purpose": "Hairline edge inside every line disc."
+      },
+      {
+        "name": "tab-active",
+        "value": "inset 0 -4px 0 #FFD100",
+        "purpose": "Active tab and primary-button hover underline (top edge on the phone tab bar)."
+      },
+      {
+        "name": "ring-selected",
+        "value": "inset 0 0 0 3px var(--rule-strong)",
+        "purpose": "Selected day cell and today's day number."
+      },
+      {
+        "name": "ring-drop",
+        "value": "inset 0 0 0 3px #FFD100",
+        "purpose": "Drop-target day cell (2px on stations)."
+      },
+      {
+        "name": "band-rules-dark",
+        "value": "inset 0 2px 0 #FFD100, inset 0 -2px 0 #FFD100",
+        "purpose": "Selected station and today band in the dark scheme."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.2, 0.8, 0.2, 1)",
+        "purpose": "The single easing curve."
+      },
+      {
+        "name": "state",
+        "value": "150ms",
+        "purpose": "Color, fill and inset-shadow changes on buttons and tabs."
+      },
+      {
+        "name": "toast",
+        "value": "200ms ease-out",
+        "purpose": "Toast fade and 12px rise."
+      },
+      {
+        "name": "stop-scale",
+        "value": "250ms ease-out, scale(1.3)",
+        "purpose": "Selected station stop grows."
+      },
+      {
+        "name": "arrive",
+        "value": "420ms ease-out, clip-path circle grown from the stop",
+        "purpose": "Station band reveal when a day is selected."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms",
+        "purpose": "All animations and transitions under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1180px",
+        "purpose": "Week panel 380px; bar legend moves to a strip."
+      },
+      {
+        "name": "planner-row",
+        "value": "961px",
+        "purpose": "Planner stations side by side (min-width)."
+      },
+      {
+        "name": "stack",
+        "value": "960px",
+        "purpose": "Week panel stacks under the month; kanban shows one column."
+      },
+      {
+        "name": "phone",
+        "value": "760px",
+        "purpose": "56px bar, bottom tab bar, dot-only month cells."
+      },
+      {
+        "name": "coarse",
+        "value": "pointer: coarse",
+        "purpose": "Small buttons grow to 40px."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main action (Agendar, Salvar, Adicionar). Ink fill; hover adds a 4px yellow underline instead of changing the fill.",
+      "html": "<button class=\"ds-btn ds-btn-primary\" type=\"button\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg>Agendar</button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 40px; padding: 0 16px; border: 1px solid transparent; border-radius: 0; background: none; font: 600 15px/1 var(--font, Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif); color: var(--ink, #16181A); white-space: nowrap; cursor: pointer; transition: background-color 0.15s, color 0.15s, box-shadow 0.15s; } .ds-btn:focus-visible { outline: 2px solid var(--ink, #16181A); outline-offset: 2px; } .ds-btn-primary { background: var(--ink, #16181A); color: var(--surface, #FFFFFF); } .ds-btn-primary:hover { box-shadow: inset 0 -4px 0 var(--accent, #FFD100); }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Navigation and secondary actions (Hoje, Nova rotina). 1px ink border; hover inverts.",
+      "html": "<button class=\"ds-btn ds-btn-outline\" type=\"button\">Hoje</button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 40px; padding: 0 16px; border: 1px solid transparent; border-radius: 0; background: none; font: 600 15px/1 var(--font, Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif); color: var(--ink, #16181A); white-space: nowrap; cursor: pointer; transition: background-color 0.15s, color 0.15s, box-shadow 0.15s; } .ds-btn:focus-visible { outline: 2px solid var(--ink, #16181A); outline-offset: 2px; } .ds-btn-outline { border-color: var(--ink, #16181A); } .ds-btn-outline:hover { background: var(--ink, #16181A); color: var(--surface, #FFFFFF); }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Cancel and low-priority actions; text only, 5% ink wash on hover.",
+      "html": "<button class=\"ds-btn ds-btn-ghost\" type=\"button\">Cancelar</button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 40px; padding: 0 16px; border: 1px solid transparent; border-radius: 0; background: none; font: 600 15px/1 var(--font, Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif); color: var(--ink, #16181A); white-space: nowrap; cursor: pointer; transition: background-color 0.15s, color 0.15s, box-shadow 0.15s; } .ds-btn:focus-visible { outline: 2px solid var(--ink, #16181A); outline-offset: 2px; } .ds-btn-ghost { color: var(--ink-2, #464A45); } .ds-btn-ghost:hover { background: var(--hover, rgba(22,24,26,0.05)); color: var(--ink, #16181A); }"
+    },
+    {
+      "name": "Icon Button",
+      "kind": "button",
+      "refersTo": "button-icon",
+      "description": "Square 40px pager and move control with an 18px stroke icon.",
+      "html": "<button class=\"ds-btn ds-btn-icon\" type=\"button\" aria-label=\"Mês anterior\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m15 18-6-6 6-6\"/></svg></button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 40px; padding: 0 16px; border: 1px solid transparent; border-radius: 0; background: none; font: 600 15px/1 var(--font, Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif); color: var(--ink, #16181A); white-space: nowrap; cursor: pointer; transition: background-color 0.15s, color 0.15s, box-shadow 0.15s; } .ds-btn:focus-visible { outline: 2px solid var(--ink, #16181A); outline-offset: 2px; } .ds-btn-icon { width: 40px; padding: 0; border-color: var(--ink, #16181A); } .ds-btn-icon:hover { background: var(--ink, #16181A); color: var(--surface, #FFFFFF); }"
+    },
+    {
+      "name": "Underline Input",
+      "kind": "input",
+      "refersTo": "input-underline",
+      "description": "Primary text entry: no box, a 2px ink rule that thickens and takes the week tint on focus.",
+      "html": "<input class=\"ds-input\" type=\"text\" placeholder=\"O que vai acontecer?\">",
+      "css": ".ds-input { width: 280px; height: 44px; padding: 0 2px; border: 0; border-bottom: 2px solid var(--ink, #16181A); border-radius: 0; background: transparent; font: 600 17px var(--font, Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif); color: var(--ink, #16181A); } .ds-input::placeholder { color: var(--ink-3, #62665F); opacity: 1; } .ds-input:focus-visible { outline: none; border-bottom-width: 3px; background: var(--tint, #FFFAE0); }"
+    },
+    {
+      "name": "Sign Bar Tabs",
+      "kind": "nav",
+      "refersTo": "tab",
+      "description": "Black station-sign bar; the active tab is white with a 4px yellow underline.",
+      "html": "<nav class=\"ds-bar\" role=\"tablist\"><span class=\"ds-brand\"><span class=\"ds-brand-stop\"></span>Organizador</span><button class=\"ds-tab\" role=\"tab\" aria-selected=\"true\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M16 2v4M8 2v4M3 10h18\"/></svg>Calendário</button><button class=\"ds-tab\" role=\"tab\" aria-selected=\"false\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"/><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"/><circle cx=\"18\" cy=\"5\" r=\"3\"/></svg>Planner</button><button class=\"ds-tab\" role=\"tab\" aria-selected=\"false\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M8 7v7M12 7v4M16 7v9\"/></svg>Kanban</button></nav>",
+      "css": ".ds-bar { display: flex; align-items: center; height: 72px; padding: 0 32px; background: var(--sign, #16181A); color: var(--sign-ink, #FFFFFF); font-family: var(--font, Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif); } .ds-brand { display: flex; align-items: center; gap: 14px; margin-right: 32px; font-weight: 800; font-size: 21px; letter-spacing: -0.01em; } .ds-brand-stop { width: 14px; height: 14px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 4px var(--sign, #16181A), 0 0 0 7px var(--accent, #FFD100); } .ds-tab { display: flex; align-items: center; gap: 8px; height: 100%; padding: 0 20px; border: 0; background: none; font: 600 16px var(--font, Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif); color: var(--sign-ink-2, #B9BCB8); box-shadow: inset 0 -4px 0 transparent; cursor: pointer; transition: color 0.15s, box-shadow 0.15s; } .ds-tab:hover { color: var(--sign-ink, #FFFFFF); } .ds-tab[aria-selected=\"true\"] { color: var(--sign-ink, #FFFFFF); box-shadow: inset 0 -4px 0 var(--accent, #FFD100); } .ds-tab:focus-visible { outline: 2px solid var(--accent, #FFD100); outline-offset: 2px; }"
+    },
+    {
+      "name": "Line Discs",
+      "kind": "chip",
+      "refersTo": "line-disc",
+      "description": "Categories as numbered SP Metrô line discs; the only place category color appears.",
+      "html": "<span class=\"ds-legend\"><span class=\"ds-leg\"><span class=\"ds-disc\" style=\"--c:#0455A1;--on:#FFFFFF\">1</span>Trabalho</span><span class=\"ds-leg\"><span class=\"ds-disc\" style=\"--c:#007E5E;--on:#FFFFFF\">2</span>Contas</span><span class=\"ds-leg\"><span class=\"ds-disc\" style=\"--c:#D9261C;--on:#FFFFFF\">3</span>Saúde</span><span class=\"ds-leg\"><span class=\"ds-disc\" style=\"--c:#FFD100;--on:#16181A\">4</span>Casa</span><span class=\"ds-leg\"><span class=\"ds-disc\" style=\"--c:#9B3894;--on:#FFFFFF\">5</span>Pessoal</span><span class=\"ds-leg\"><span class=\"ds-disc\" style=\"--c:#9EA3A8;--on:#16181A\">15</span>Outros</span></span>",
+      "css": ".ds-legend { display: flex; flex-wrap: wrap; gap: 8px 18px; font: 400 13px var(--font, Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif); color: var(--ink-2, #464A45); } .ds-leg { display: flex; align-items: center; gap: 7px; } .ds-disc { width: 22px; height: 22px; flex: none; border-radius: 50%; display: inline-grid; place-items: center; background: var(--c); color: var(--on); font: 700 11px/1 var(--font, Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.14); transition: transform 0.15s; } .ds-leg:hover .ds-disc { transform: scale(1.08); }"
+    },
+    {
+      "name": "Station Rail",
+      "kind": "custom",
+      "refersTo": "station-stop",
+      "description": "The week as a metro line: 6px ink rail, 26px ringed stops; today's stop yellow, its station banded.",
+      "html": "<ol class=\"ds-rail\"><li class=\"ds-st\"><span class=\"ds-stop\"></span><b>Seg</b> <span class=\"ds-date\">19</span><div class=\"ds-item\"><span class=\"ds-mark on\"><svg width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 6 9 17l-5-5\"/></svg></span><span class=\"ds-time\">07:00</span><span class=\"ds-disc\" style=\"--c:#D9261C;--on:#fff\">3</span><s>Academia</s></div></li><li class=\"ds-st is-today\"><span class=\"ds-stop\"></span><b>Ter</b> <span class=\"ds-date\">20 · hoje</span><div class=\"ds-item\"><span class=\"ds-mark\"></span><span class=\"ds-time\">14:00</span><span class=\"ds-disc\" style=\"--c:#D9261C;--on:#fff\">3</span><span>Dentista</span></div></li><li class=\"ds-st\"><span class=\"ds-stop\"></span><b>Qua</b> <span class=\"ds-date\">21</span></li></ol>",
+      "css": ".ds-rail { position: relative; list-style: none; margin: 0; padding: 0; width: 360px; background: var(--surface, #fff); font: 400 15px/1.4 var(--font, Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif); color: var(--ink, #16181A); } .ds-rail::before { content: ''; position: absolute; z-index: 1; left: 15px; top: 18px; bottom: 18px; width: 6px; background: var(--rule-strong, #16181A); } .ds-st { position: relative; padding: 6px 0 8px 48px; } .ds-st.is-today { background: var(--band, #FFF1A8); } .ds-st b { font-weight: 800; font-size: 17px; } .ds-date { font-weight: 500; color: var(--ink-3, #62665F); font-variant-numeric: tabular-nums; } .ds-stop { position: absolute; z-index: 2; left: 5px; top: 6px; width: 26px; height: 26px; border-radius: 50%; background: var(--surface, #fff); box-shadow: inset 0 0 0 6px var(--rule-strong, #16181A); transition: transform 0.25s cubic-bezier(0.2,0.8,0.2,1); } .ds-st.is-today .ds-stop { background: var(--accent, #FFD100); transform: scale(1.3); } .ds-item { display: grid; grid-template-columns: 22px 44px 18px 1fr; align-items: center; gap: 8px; min-height: 32px; } .ds-item s { color: var(--ink-3, #62665F); } .ds-mark { width: 22px; height: 22px; box-sizing: border-box; border-radius: 50%; border: 2px solid var(--ink, #16181A); background: var(--surface, #fff); display: grid; place-items: center; color: transparent; } .ds-mark.on { background: var(--ink, #16181A); color: var(--surface, #fff); } .ds-time { font-weight: 600; font-size: 14px; color: var(--ink-2, #464A45); font-variant-numeric: tabular-nums; } .ds-disc { width: 18px; height: 18px; border-radius: 50%; display: inline-grid; place-items: center; background: var(--c); color: var(--on); font: 700 10px/1 var(--font, Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif); font-variant-numeric: tabular-nums; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.14); }"
+    },
+    {
+      "name": "Kanban Card with Stamp",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Square white card on a hairline; done cards keep a green dated stamp.",
+      "html": "<article class=\"ds-card\"><div class=\"ds-card-main\"><span class=\"ds-disc\" style=\"--c:#007E5E;--on:#fff\">2</span><span class=\"ds-card-title\">Revisar orçamento do mês</span></div><p class=\"ds-note\">Conferir cartão e contas fixas</p><span class=\"ds-stamp\"><svg width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 6 9 17l-5-5\"/></svg>Feito em 20/10</span></article>",
+      "css": ".ds-card { width: 320px; display: flex; flex-direction: column; gap: 6px; padding: 12px 12px 8px; background: var(--surface, #fff); border: 1px solid var(--rule, #CDD0CA); font-family: var(--font, Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif); color: var(--ink, #16181A); cursor: grab; } .ds-card:hover { border-color: var(--ink-3, #62665F); } .ds-card-main { display: flex; align-items: flex-start; gap: 8px; } .ds-card-title { font-weight: 600; font-size: 16px; line-height: 1.35; } .ds-card-title:hover { text-decoration: underline; text-underline-offset: 3px; } .ds-note { margin: 0; font-size: 14px; line-height: 1.45; color: var(--ink-2, #464A45); } .ds-stamp { align-self: flex-start; display: inline-flex; align-items: center; gap: 5px; padding: 3px 8px; background: var(--ok, #007E5E); color: var(--ok-ink, #fff); font-weight: 700; font-size: 12px; letter-spacing: 0.02em; font-variant-numeric: tabular-nums; } .ds-disc { width: 22px; height: 22px; flex: none; border-radius: 50%; display: inline-grid; place-items: center; background: var(--c); color: var(--on); font: 700 11px/1 var(--font, Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.14); transition: transform 0.15s; } .ds-card-main .ds-disc { margin-top: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Station Sign",
+    "overview": "The organizer is drawn as São Paulo Metrô wayfinding. A black sign bar carries white grotesque type; categories are metro lines, shown as numbered color discs; the week is a line with seven stations, each a ringed stop on a heavy black rail. The month is a hairline mesh on concrete-grey ground, so the page reads like a printed network map, not like a stack of app cards.\n\nDensity is high and calm. Hierarchy comes from weight (one grotesque from 400 to 800) and from the rail, not from boxes, shadows or color fills. Color is information: line colors identify category, yellow says \"here, now, this one\", red marks Sundays, holidays, errors and delete. Everything else is ink on concrete. The world refuses the category default for organizers: white rounded cards, a grey sidebar and a single blue accent.\n\nThe system runs in light and dark schemes. Dark keeps the same signage logic: the sign bar goes pure black, neutrals invert, and yellow moves from a fill to a pair of 2px rules so the band stays legible on dark ground.",
+    "keyCharacteristics": [
+      "Black sign bar (72px, 56px on phones) with white grotesque type and a 4px yellow underline on the active tab.",
+      "Categories as numbered SP Metrô line discs; never as colored boxes.",
+      "The week as a station rail: 6px rail, 26px stops with a 6px ring, today filled yellow.",
+      "1px hairline mesh with 2px strong rules as section heads; zero radius on every rectangle.",
+      "One typeface (Archivo), tabular numerals for every time, date and count.",
+      "Done is a state, not a deletion: struck through, or stamped green with its date."
+    ],
+    "rules": [
+      {
+        "name": "The Signal Yellow Rule",
+        "body": "Yellow means \"here, now, this one\": active tab, today, selected station, drop target, hover on the primary action. It never decorates chrome, never fills a button at rest, and its only categorical use is the line 4 disc.",
+        "section": "colors"
+      },
+      {
+        "name": "The Line Is a Disc Rule",
+        "body": "A category color appears only as a numbered disc or a 10px chip dot. It never tints a card, cell, border or text.",
+        "section": "colors"
+      },
+      {
+        "name": "The Red Calendar Rule",
+        "body": "Red text belongs to the calendar (Sundays, holidays) and to danger (delete, invalid). Line 3 is a disc, never red text.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Grotesque Rule",
+        "body": "Archivo is the only face. Hierarchy is made with weight and size, never a second family.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Clock Rule",
+        "body": "Every time, day number, date, count and disc numeral is set with tabular figures so columns align like a departure board.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Platform Rule",
+        "body": "Nothing on the grid casts a shadow at rest. Lift is for things in transit (dragging) or announcements floating above the map (toast).",
+        "section": "elevation"
+      },
+      {
+        "name": "The Mesh and Stop Rule",
+        "body": "Rectangles are 0px, circles are 50%. There is no third shape and no in-between radius.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do show a category as its numbered line disc (or a 10px dot in tight calendar cells), using the `App.LINES` value and its matching numeral color.",
+      "Do keep yellow for \"here and now\": active tab, today, the selected station, drop targets, and the primary hover underline.",
+      "Do draw structure with rules: 1px hairline mesh, 2px ink section rules, the 6px rail.",
+      "Do set every time, date, number and count in Archivo with tabular figures.",
+      "Do show done as a state (struck through in Tertiary Ink, or the green stamp with its date); finished things stay visible until the user clears them.",
+      "Do carry both schemes through the custom properties: in dark, the band becomes yellow rules on warm black, not a yellow fill.",
+      "Do keep touch targets at 40px or more under coarse pointers."
+    ],
+    "donts": [
+      "Don't round a rectangle. Cells, buttons, inputs and cards stay at 0px; only stops, discs, marks and dots are circles.",
+      "Don't fill a card, cell or border with a category color, and don't set text in a line color.",
+      "Don't use yellow as decoration, as a resting button fill, or for anything that isn't the current or targeted thing.",
+      "Don't introduce a second typeface or proportional numerals in a time column.",
+      "Don't add ambient shadows to resting surfaces; Lift is only for the drag ghost and the toast.",
+      "Don't fall back to the organizer default: white rounded cards, a grey sidebar, one blue accent."
+    ]
+  }
+}

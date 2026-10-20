@@ -1,0 +1,10 @@
+# Configuração local do servidor de testes
+.claude/
+
+# Gerados localmente pela revisão de design
+.impeccable/hook.cache.json
+.impeccable/review/
+
+# Wrangler
+.wrangler/
+node_modules/
