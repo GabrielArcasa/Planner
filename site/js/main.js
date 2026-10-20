@@ -59,7 +59,10 @@
       App.ui.focus = null;
       if (el) {
         el.focus({ preventScroll: false });
-        if (el.select && el.value) el.select();
+        /* Cursor no fim do texto (campos de data/hora não aceitam seleção). */
+        try {
+          if (el.setSelectionRange && el.value) el.setSelectionRange(el.value.length, el.value.length);
+        } catch (e) {}
       }
     }
     if (App.ui.reveal) {

@@ -78,6 +78,20 @@
   };
   D.holiday = (k) => D.holidays(Number(k.slice(0, 4)))[k] || null;
 
+  /* "agora", "há 5 min", "hoje, 14:32", "ontem, 09:10", "18/10, 08:00". */
+  D.when = (iso) => {
+    const d = new Date(iso);
+    const now = new Date();
+    const mins = Math.floor((now - d) / 60000);
+    const hm = `${pad(d.getHours())}:${pad(d.getMinutes())}`;
+    if (mins < 1) return 'agora';
+    if (mins < 60) return `há ${mins} min`;
+    const k = D.key(d);
+    if (k === D.today()) return `hoje, ${hm}`;
+    if (k === D.key(D.add(now, -1))) return `ontem, ${hm}`;
+    return `${D.short(d)}${d.getFullYear() !== now.getFullYear() ? '/' + d.getFullYear() : ''}, ${hm}`;
+  };
+
   /* ---------- Linhas (categorias), nas cores do Metrô ---------- */
 
   App.LINES = [
@@ -116,6 +130,9 @@
     arrowRight: '<path d="M5 12h14M12 5l7 7-7 7"/>',
     arrowLeft: '<path d="M19 12H5M12 19l-7-7 7-7"/>',
     open: '<path d="M7 17 17 7M7 7h10v10"/>',
+    tag: '<path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r="1.5"/>',
+    checklist: '<path d="m3 17 2 2 4-4M3 7l2 2 4-4M13 6h8M13 12h8M13 18h8"/>',
+    message: '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"/>',
   };
   App.icon = (name, cls = '') =>
     `<svg class="icon ${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${PATHS[name]}</svg>`;
@@ -124,10 +141,20 @@
 
   const KEY = 'organizador:v1';
   const blank = () => ({ version: 1, events: [], routines: [], tasks: [], lastLine: 'azul' });
+  /* Dados salvos antes de cor/tags/checklists/comentários ganham os campos novos. */
+  function normalize(d) {
+    d.tasks.forEach((t) => {
+      if (t.color === undefined) t.color = t.line || '';
+      t.tags = t.tags || [];
+      t.checklists = t.checklists || [];
+      t.comments = t.comments || [];
+    });
+    return d;
+  }
   function read() {
     try {
       const raw = localStorage.getItem(KEY);
-      return raw ? Object.assign(blank(), JSON.parse(raw)) : blank();
+      return normalize(raw ? Object.assign(blank(), JSON.parse(raw)) : blank());
     } catch (e) {
       return blank();
     }
@@ -137,7 +164,8 @@
   const listeners = new Set();
   let warned = false;
 
-  function commit() {
+  /* silent: salva sem redesenhar a tela (edições de texto enquanto a pessoa digita). */
+  function commit(opts = {}) {
     try {
       localStorage.setItem(KEY, JSON.stringify(data));
       warned = false;
@@ -145,7 +173,7 @@
       if (!warned) App.toast('Não foi possível salvar neste navegador. Libere o armazenamento do site para não perder dados.');
       warned = true;
     }
-    listeners.forEach((fn) => fn());
+    if (!opts.silent) listeners.forEach((fn) => fn());
   }
 
   /* Outra aba alterou os dados: recarrega. */
@@ -245,23 +273,43 @@
     tasks: (status) => data.tasks.filter((t) => t.status === status),
     getTask: (id) => data.tasks.find((t) => t.id === id),
     addTask(v) {
-      const t = { id: App.uid(), title: v.title, note: v.note || '', line: v.line || '', status: 'todo', createdAt: D.today(), doneAt: '' };
+      const t = {
+        id: App.uid(), title: v.title, note: '', color: '', tags: [], checklists: [], comments: [],
+        status: 'todo', createdAt: D.today(), doneAt: '',
+      };
       data.tasks.unshift(t);
       commit();
       return t;
     },
-    updateTask(id, patch) {
+    updateTask(id, patch, opts) {
       const t = S.getTask(id);
       if (!t) return;
       Object.assign(t, patch);
-      commit();
+      commit(opts);
+    },
+    /* Edita o cartão no lugar: editTask(id, (t) => t.tags.push('casa')). */
+    editTask(id, fn, opts) {
+      const t = S.getTask(id);
+      if (!t) return;
+      fn(t);
+      commit(opts);
+    },
+    /* Todas as tags usadas, sem repetir maiúsculas/minúsculas, em ordem alfabética. */
+    allTags() {
+      const seen = new Map();
+      data.tasks.forEach((t) => t.tags.forEach((g) => seen.has(g.toLowerCase()) || seen.set(g.toLowerCase(), g)));
+      return [...seen.values()].sort((a, b) => a.localeCompare(b, 'pt-BR'));
     },
     /* Move para uma coluna, antes de outro cartão (ou no fim). */
     moveTask(id, status, beforeId) {
       const i = data.tasks.findIndex((t) => t.id === id);
       if (i < 0) return;
       const [t] = data.tasks.splice(i, 1);
-      if (t.status !== status) t.doneAt = status === 'done' ? D.today() : '';
+      if (t.status !== status) {
+        t.doneAt = status === 'done' ? D.today() : '';
+        /* Fica registrado nas atualizações do cartão. */
+        t.comments.unshift({ id: App.uid(), kind: 'move', to: status, at: new Date().toISOString() });
+      }
       t.status = status;
       let at = beforeId ? data.tasks.findIndex((x) => x.id === beforeId) : -1;
       if (at < 0) {

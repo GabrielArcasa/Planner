@@ -10,7 +10,11 @@ Dê dois cliques em `site/index.html`. Abre em qualquer navegador moderno (Chrom
 
 - **Calendário**: o mês inteiro. Clique num dia para agendar (título, horário opcional e linha/categoria). Arraste um compromisso para outro dia para mudar a data. Ao lado, a *linha da semana* mostra a semana do dia escolhido.
 - **Planner**: a semana de segunda a domingo, com as datas de verdade. Tudo o que você agenda no calendário aparece aqui no dia certo, junto com a **rotina semanal** (itens que se repetem, como "Academia, seg/qua/sex"). Marque cada item como feito no círculo à esquerda.
-- **Kanban**: A fazer → Fazendo → Feito. Arraste os cartões ou use as setas. Independente do calendário.
+- **Kanban**: A fazer → Fazendo → Feito. Arraste os cartões ou use as setas. Independente do calendário. Clique num cartão para abrir os detalhes:
+  - **Cor**: o cartão inteiro ganha o tom escolhido.
+  - **Tags**: etiquetas livres; clique numa tag no quadro para ver só os cartões com ela.
+  - **Checklists**: quantas quiser, cada uma com nome e itens; o progresso aparece no cartão (ex.: 2/4).
+  - **Atualizações**: comentários e feedbacks com data e hora. Quando o cartão muda de coluna, isso fica registrado sozinho.
 
 As categorias são "linhas" com as cores do Metrô de SP: 1 Trabalho, 2 Contas, 3 Saúde, 4 Casa, 5 Pessoal, 15 Outros.
 
